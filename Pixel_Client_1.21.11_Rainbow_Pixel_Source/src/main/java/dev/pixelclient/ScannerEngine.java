@@ -121,7 +121,7 @@ public final class ScannerEngine {
     public int scannedCount() { return totalScanned; }
     public int leadCount() { return leads.size(); }
     public Lead tracked() { return tracked; }
-    public String dimension() { return currentLevel == null ? "" : currentLevel.dimension().location().toString(); }
+    public String dimension() { return currentLevel == null ? "" : currentLevel.dimension().identifier().toString(); }
     public Collection<Lead> allLeads() { return List.copyOf(leads.values()); }
 
     public void tick(Minecraft client) {
