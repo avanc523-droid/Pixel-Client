@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "pixelclient",
+  "version": "${version}",
+  "name": "Pixel Client",
+  "description": "Pixel-art rainbow themed local-only base-finding scanner and chunk radar. Scans server-loaded chunk data; never uploads coordinates or account data.",
+  "authors": [
+    "Pixel Client (original open-source project)"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.pixelclient.PixelClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "icon": "assets/pixelclient/icon.png"
+}
